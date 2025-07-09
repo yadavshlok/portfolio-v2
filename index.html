@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/css/output.css" />
+    <link rel="stylesheet" href="build/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script defer src="build/js/menu.js"></script>
+    <title>Portfolio - Shlok Yadav</title>
+    <link rel="shortcut icon" href="./build/img/Spiderman.png" type="image/x-icon">
+  </head>
+  <body
+    class="flex min-w-full flex-col items-center text-white bg-zinc-900"
+  >
+    <aside
+      id="socials"
+      class="fixed left-0 top-1/3 z-10 hidden flex-col justify-center p-5 lg:flex"
+    >
+      <div id="socials-container" class="flex flex-col gap-5">
+        <a
+          href="https://www.linkedin.com/in/shlokyadav37"
+          target="_blank"
+        >
+          <img
+            src="build/img/linkedin.png"
+            alt="linked"
+            class="h-auto w-10 cursor-pointer rounded-lg duration-300 hover:scale-110 hover:bg-blue-700 hover:transition-all"
+          />
+        </a>
+        <a href="https://github.com/yadavshlok" target="_blank">
+          <img
+            src="build/img/footer-github.png"
+            alt="github"
+            class="h-auto w-10 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-purple-500 hover:transition-all"
+          />
+        </a>
+        
+        <a href="mailto:yadavshlok37@gmailcom" target="_blank">
+          <img
+            src="build/img/mail.png"
+            alt="mail"
+            class="h-auto w-10 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-red-600 hover:transition-all"
+          />
+        </a>
+      </div>
+    </aside>
+    <header
+      class="fixed top-0 z-20 flex h-14 min-w-full justify-center p-2 bg-zinc-900 text-lg text-gray-300 sm:h-24"
+    >
+      <div class="header-hero flex w-4/5 items-center justify-between">
+        <img id="logo" src="build/img/logo.png" alt="logo" class="block w-15" />
+        <img
+          id="menu"
+          src="build/img/menu.svg"
+          alt="menu"
+          class="block h-1/2 hover:cursor-pointer lg:hidden"
+        />
+        <nav id="navbar" class="hidden gap-10 text-xl lg:flex">
+          <a
+            href="index.html"
+            class="transition-all duration-300 hover:scale-110 hover:text-grey-300 hover:ease-in-out"
+            >Home
+          </a>
+          <a
+            href="#about-me"
+            class="transition-all duration-300 hover:scale-110 hover:text-grey-300 hover:ease-in-out"
+            >About
+          </a>
+          <a
+            href="#tech-stack"
+            class="transition-all duration-300 hover:scale-110 hover:text-grey-300 hover:ease-in-out"
+            >Tech Stack
+          </a>
+          <a
+            href="#projects"
+            class="transition-all duration-300 hover:scale-110 hover:text-grey-300 hover:ease-in-out"
+            >Projects
+          </a>
+          <a
+            href="#contact"
+            class="transition-all duration-300 hover:scale-110 hover:text-grey-300 hover:ease-in-out"
+            >Contact
+          </a>
+        </nav>
+      </div>
+      <div
+        id="dropdownMenu"
+        class="animate_animated animate__slideInDown fixed top-0 left-0 z-20 hidden h-screen w-full flex-col items-center text-3xl lg:hidden"
+      >
+        <ul id="links" class="toggle-list w-4/5">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about-me">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="flex min-h-screen min-w-full flex-col items-center">
+      <section
+        id="hero"
+        class="flex w-3/4 flex-col items-center justify-center pt-12 md:pt-24 lg:min-w-full"
+      >
+        <div id="hero-wrap" class="flex justify-center lg:gap-16">
+          <div id="intro" class="mx-auto flex flex-col justify-center">
+            <h2
+              class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl"
+            >
+              Hi,
+            </h2>
+            <h2
+              class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl"
+            >
+              My name is
+            </h2>
+            <h3
+              id="name"
+              class="animate__animated animate__fadeInUp pt-1 pb-1 text-5xl sm:text-6xl md:text-7xl"
+            >
+              Shlok Yadav
+            </h3>
+            <p
+              class="animate__animated animate__fadeInUp pt-3 text-2xl sm:text-3xl md:text-4xl"
+            >
+              I build apps and mess with <br>some web stuff!
+            </p>
+            <button
+              id="contactMe"
+              class="animate__animated animate__zoomIn mt-5 flex h-10 w-40 items-center justify-center rounded-3xl border-2 to-transparent p-2 text-center text-lg md:h-14 md:w-60 md:text-2xl"
+            >
+              <a href="#contact">CONTACT ME</a>
+            </button>
+          </div>
+          <figure
+            class="animate__animated animate__fadeInRight flex flex-col justify-center"
+          >
+            <img
+              src="build/img/hero-img.png"
+              alt="hero"
+              class="hidden max-w-xs xl:block"
+            />
+          </figure>
+        </div>
+      </section>
+      <section
+        id="about-me"
+        class="flex w-full flex-col items-center justify-center gap-8 p-8"
+      >
+        <div class="aboutCard mx-auto min-h-full w-full sm:w-4/6">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl" id="about-me-caption">
+            About Me
+          </h2>
+        </div>
+        <div class="aboutCard min-h-full w-full sm:w-4/6">
+          <p class="text-lg sm:text-xl md:text-3xl lg:text-2xl mb-8">
+            Hi my name is Shlok D. Yadav, an enthusiastic <span style="font-weight: 600;">Flutter & Web</span> developer from Pune. I've completed my Bachelors degree in Computer Science from <span style="font-weight: 600;">PVG's COS, Pune</span>.  Skilled in Flutter and web technologies through academic and personal projects. A fast
+            learner with a creative and adaptive mindset, eager to take on real-world challenges and grow as a developer. I'm committed to continuous learning and development, and I'm excited to apply my skills to new opportunities in the future.
+          </p>
+        </div>
+        <div class="w-full sm:w-4/6">
+          <button
+            class="mx-auto h-10 w-40 rounded-2xl border-2 border-blue-400 bg-transparent text-lg text-blue-200 sm:h-14 sm:w-52 sm:text-2xl"
+          >
+            <a href="#contact">CONTACT</a>
+          </button>
+        </div>
+      </section>
+      <section
+        id="tech-stack"
+        class="flex min-w-full flex-col items-center justify-center"
+      >
+        <h1 class="text-3xl sm:text-4xl md:text-5xl" id="tech-stack-caption">
+          My Tech Stack
+        </h1>
+        <p class="p-2 pt-5 text-center text-2xl text-gray-300 mb-8">
+          Technologies I've been working with currently
+        </p>
+        <div
+          id="stacks"
+          class="flex flex-wrap w-1/2 justify-center items-center gap-4 mb-8"
+        >
+          <img
+            src="./build/img/flutter.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+          <img
+            src="./build/img/dart.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+          <img
+            src="build/img/html.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+          <img
+            src="./build/img/css.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+          <img
+            src="./build/img/js.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+          <img
+            src="build/img/firebase.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+          <img
+            src="build/img/tailwind.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+          <img
+            src="build/img/androidstudio.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+          <img
+            src="build/img/footer-github.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+          <img
+            src="build/img/postman.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+          <img
+            src="build/img/figma.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75 lg:scale-90 tech-icon"
+          />
+        </div>
+      </section>
+      <section
+        id="projects"
+        class="relative flex min-w-full flex-col items-center gap-4 p-5"
+      >
+        <div id="caption-projects" class="text-center">
+          <p class="text-3xl sm:text-4xl md:text-5xl" id="projects-heading">
+            My Projects
+          </p>
+          <p class="p-3 text-xl text-gray-300 sm:text-2xl">
+            Things I've built so far
+          </p>
+        </div>
+        <div
+          id="project-container"
+          class="flex w-4/5 flex-wrap place-content-center justify-center gap-10"
+        >
+          <div class="">
+            <img src="" alt="" />
+            <h2 class="mx-3 pt-1 text-xl font-bold underline-offset-1">
+              Project 1
+            </h2>
+            <div
+              class="projectLinkContainer flex w-full items-center justify-between px-4"
+            >
+              <a href="">
+                <p class="underline">View Project</p>
+              </a>
+              <a href="">
+                <img src="build/img/footer-github.png" alt="" />
+              </a>
+            </div>
+            <p class="text- m-1 w-4/5 text-center">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint cum
+              natus perferendis
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="flex w-3/4 items-center justify-center pt-12 md:pt-24 lg:min-w-full"
+      ><div class="flex flex-col w-1/2 justify-center items-start gap-10 mb-8 pl-20">
+        
+        <div class="flex h-20 justify-start items-center gap-4 ">
+          <a href="mailto:yadavshlok37@gmail.com" target="_blank">
+          <img src="./build/img/mail-icon.png" alt="" class="info-icon"></a>
+          <div class="mail-info">
+            <h6 class="info-title">EMAIL</h6>
+            <p class="info-text">yadavshlok37@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex h-20 justify-start items-center gap-4 ">
+          <a href="https://web.whatsapp.com" target="_blank">
+          <img src="./build/img/phone-icon.png" alt="" class="info-icon"></a>
+          <div class="phone-info">
+            <h6 class="info-title">PHONE</h6>
+            <p class="info-text">+91 8767166373</p>
+          </div>
+        </div>
+        <div class="flex h-20 justify-start items-center gap-4 ">
+          <a href="https://www.google.com/maps/place/Pune" target="_blank">
+          <img src="./build/img/location.png" alt="" class="info-icon"></a>
+          <div class="location-info">
+            <h6  class="info-title">LOCATION</h6>
+            <p class="info-text">Pune, INDIA</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2 justify-center items-center gap-4 mb-8 pr-10">
+        <img src="./build/img/my-socials.png" alt="" class="flex flex-wrap w-1/2 justify-center items-center gap-4">
+        <div id="footer-img-wrap" class="flex w-1/2 justify-center items-center gap-5 mb-40">
+      
+        <a
+          href="https://www.linkedin.com/in/shlokyadav37"
+          target="_blank"
+        >
+          <img
+            src="build/img/linkedin.png"
+            alt="linked"
+            class="h-auto w-20 cursor-pointer rounded-lg duration-300 hover:scale-110 hover:bg-blue-700 hover:transition-all"
+          />
+        </a>
+        <a href="https://github.com/yadavshlok" target="_blank">
+          <img
+            src="build/img/footer-github.png"
+            alt="github"
+            class="h-auto w-20 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-purple-500 hover:transition-all"
+          />
+        </a>
+        
+        <a href="mailto:yadavshlok37@gmailcom" target="_blank">
+          <img
+            src="build/img/mail.png"
+            alt="mail"
+            class="h-auto w-20 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-red-600 hover:transition-all"
+          />
+        </a>
+      
+      </div>
+      </div>
+      </section>
+    </main>
+  </body>
+</html>
