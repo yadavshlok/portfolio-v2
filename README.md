@@ -1,8 +1,9 @@
-# Portfolio - Shlok Yadav
+<img width="1253" height="442" alt="image" src="https://github.com/user-attachments/assets/0baf7acd-13bf-4ef6-9a90-845224862282" /># Portfolio - Shlok Yadav
 
 A personal portfolio website developed by **Shlok Yadav**. This site highlights my background, technical skills, featured projects, and contact information — built to reflect my personality and professional journey as a developer.
 
-[🔗 Live Demo](https://yadavshlok.github.io/Portfolio)
+[🔗 Live Demo](https://yadavshlok.github.io/portfolio-v2/
+)
 
 ---
 
@@ -52,4 +53,5 @@ open index.html   # or open in your browser
 Feel free to reach out:
 
 - 📧 [yadavshlok37@gmail.com](mailto:yadavshlok37@gmail.com)  
-- 🌐 [yadavshlok.github.io/Portfolio](https://yadavshlok.github.io/Portfolio)
+- 🌐 [yadavshlok.github.io/Portfolio](https://yadavshlok.github.io/portfolio-v2/
+)
